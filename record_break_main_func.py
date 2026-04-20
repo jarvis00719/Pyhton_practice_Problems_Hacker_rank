@@ -1,7 +1,5 @@
 import matplotlib.pyplot as plt
 
-# Main_function -- [Records Broken] -- Highest $ Lowest !!
-
 def breaking_records(score):
 
     max_score = score[0]
@@ -22,22 +20,23 @@ def breaking_records(score):
 
 
     return max_record_break, lowest_record_break
-    
-    
+
+
 #Input Statements!!
-games = int(input())
+no_of_games = int(input())
 scores = list(map(int, input().split()))
 
+
 max_record_break, lowest_record_break = breaking_records(scores)
+
 print(max_record_break, lowest_record_break)
+   
 
 
-# Data Visualization -- Records Broken !!
-plt.plot(games, scores, marker='o', label='Scores')
-plt.xlabel("Game")
-plt.ylabel("Points")
-plt.title("Breaking Records Visualization")
 
 
-plt.legend()
-plt.show()
+
+        
+
+
+
